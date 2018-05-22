@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4"
+    "babel-loader": "^7.1.4",
+    "path": "^0.12.7"
   }
 }
