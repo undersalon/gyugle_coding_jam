@@ -18,6 +18,7 @@
   "homepage": "https://github.com/undersalon/gyugle_coding_jam#readme",
   "dependencies": {
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "webpack": "^4.8.3"
   }
 }
