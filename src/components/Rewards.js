@@ -44,7 +44,7 @@ const styles = theme => ({
 		width: '25%',
 		height: '100%',
 		float: 'right',
-		"background-image": `linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/docs/public/img/rewards.png")`,
+		"background-image": `linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("./public/img/rewards.png")`,
 		"background-size": "100%"
 	}
 });
