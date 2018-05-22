@@ -1127,50 +1127,50 @@ p {
 
 @font-face {
 	font-family: 'CulDeSac';
-	src: url('/public/font/CulDeSac.ttf');
+	src: url('../font/CulDeSac.ttf');
 }
 
 @font-face {
 	font-family: 'blox';
-	src: url('/public/font/Blox2.ttf');
+	src: url('../font/Blox2.ttf');
 }
 
 @font-face {
 	font-family: 'dosis';
-	src: url('/public/font/Dosis-Medium.ttf');
+	src: url('../font/Dosis-Medium.ttf');
 }
 
 @font-face {
 	font-family: 'lmmonoproplt';
-	src: url('/public/font/lmmonoproplt10-regular.otf');
+	src: url('../font/lmmonoproplt10-regular.otf');
 }
 
 @font-face {
 	font-family: 'lilly';
-	src: url('/public/font/Lilly__.ttf');
+	src: url('../font/Lilly__.ttf');
 }
 
 @font-face {
 	font-family: 'amatic';
-	src: url('/public/font/AmaticSC-Regular.ttf');
+	src: url('../font/AmaticSC-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'jennasue';
-	src: url('/public/font/JennaSue.ttf');
+	src: url('../font/JennaSue.ttf');
 }
 
 @font-face {
 	font-family: 'bebasNeue';
-	src: url('/public/font/BebasNeue.otf');
+	src: url('../font/BebasNeue.otf');
 }
 
 @font-face {
 	font-family: 'baby';
-	src: url('/public/font/DXLBaB-KSCpc-EUC-H.ttf')
+	src: url('../font/DXLBaB-KSCpc-EUC-H.ttf')
 }
 
 @font-face {
 	font-family: 'Nanum Square';
-	src: url('/public/font/NanumSquareOTFRegular.otf')
+	src: url('../font/NanumSquareOTFRegular.otf')
 }
