@@ -1,0 +1,40 @@
+.strc1:not([data-mobile-responsive]) > .strc1inlineContent {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.strc1[data-mobile-responsive] > .strc1inlineContent {
+	position: relative;
+}
+
+.strc1[data-responsive] {
+	display: -ms-grid;
+	display: grid;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	grid-template-columns: 100%;
+	grid-template-rows: 1fr;
+	-ms-grid-columns: 100%;
+	-ms-grid-rows: 1fr;
+}
+
+.strc1[data-responsive] > .strc1inlineContent {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.strc1[data-responsive] > * {
+	position: relative;
+	grid-row-start: 1;
+	grid-column-start: 1;
+	grid-row-end: 2;
+	grid-column-end: 2;
+	-ms-grid-row-span: 1;
+	-ms-grid-column-span: 1;
+	margin: 0 auto;
+}

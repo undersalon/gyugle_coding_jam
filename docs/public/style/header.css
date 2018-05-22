@@ -1,0 +1,158 @@
+#page-header-root {
+	width: 100%;
+	position: static;
+	top: 0px;
+	height: 1168px;
+}
+
+#page-header-root .page-header {
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	min-width: 980px;
+	margin-left: 0px;
+	top: 0px;
+	height: 180px;
+}
+
+.header-title {
+	top: 150px;
+	font-size: 95px;
+	text-align: center;
+}
+
+.header-title .title {
+	font-size: 95px;
+}
+
+.txtNew {
+	height: 0;
+	word-wrap: break-word;
+	text-align: start;
+	pointer-events: none;
+	position: relative;
+	top: -43%;
+}
+
+.txtNew_override-left * {
+	text-align: left !important;
+}
+
+.txtNew_override-right * {
+	text-align: right !important;
+}
+
+.txtNew_override-center * {
+	text-align: center !important;
+}
+
+.txtNew_override-justify * {
+	text-align: justify !important;
+}
+
+.txtNew > * {
+	pointer-events: auto;
+}
+
+.txtNew li {
+	font-style: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	letter-spacing: normal;
+}
+
+.txtNew ol, .txtNew ul {
+	padding-left: 1.3em;
+	padding-right: 0;
+	margin-left: 0.5em;
+	margin-right: 0;
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+.txtNew ul {
+	list-style-type: disc;
+}
+
+.txtNew ol {
+	list-style-type: decimal;
+}
+
+.txtNew ul ul, .txtNew ol ul {
+	list-style-type: circle;
+}
+
+.txtNew ul ul ul, .txtNew ol ul ul {
+	list-style-type: square;
+}
+
+.txtNew ul ol ul, .txtNew ol ol ul {
+	list-style-type: square;
+}
+
+.txtNew ul[dir="rtl"], .txtNew ol[dir="rtl"] {
+	padding-left: 0;
+	padding-right: 1.3em;
+	margin-left: 0;
+	margin-right: 0.5em;
+}
+
+.txtNew ul[dir="rtl"] ul, .txtNew ul[dir="rtl"] ol, .txtNew ol[dir="rtl"] ul, .txtNew ol[dir="rtl"] ol {
+	padding-left: 0;
+	padding-right: 1.3em;
+	margin-left: 0;
+	margin-right: 0.5em;
+}
+
+.txtNew p {
+	margin: 0;
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+.txtNew h1 {
+	margin: 0;
+	color: white;
+	opacity: 0.8;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+}
+
+.txtNew h2 {
+	margin: 0;
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+.txtNew h3 {
+	margin: 0;
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+.txtNew h4 {
+	margin: 0;
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+.txtNew h5 {
+	margin: 0;
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+.txtNew h6 {
+	margin: 0;
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+.txtNew a {
+	color: inherit;
+}
+
+.imageButton:hover {
+	cursor: pointer;
+}

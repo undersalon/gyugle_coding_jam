@@ -1,0 +1,16 @@
+.siteBackground {
+	position: relative;
+	top: 0px;
+	z-index: 0;
+	width: 100%;
+}
+
+.siteBackgroundbgBeforeTransition {
+	position: absolute;
+	top: 0;
+}
+
+.siteBackgroundbgAfterTransition {
+	position: absolute;
+	top: 0;
+}
