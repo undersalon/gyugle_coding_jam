@@ -1,0 +1,19 @@
+{
+  "name": "gyugle_coding_jam",
+  "version": "0.0.1",
+  "description": "Undersalon gyugle coding jam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/undersalon/gyugle_coding_jam.git"
+  },
+  "author": "undersalon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/undersalon/gyugle_coding_jam/issues"
+  },
+  "homepage": "https://github.com/undersalon/gyugle_coding_jam#readme"
+}
