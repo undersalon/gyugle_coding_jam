@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Map from './Map';
+import StreetView from './StreetView';
 
 const styles = theme => ({
 	root: {
@@ -55,6 +56,19 @@ const styles = theme => ({
 		height: 120,
 		left: '43%'
 	},
+	align: {
+		padding: 0,
+		margin: 0,
+		'list-style': 'none',
+		display: 'flex',
+		'-webkit-flex-flow': 'row wrap'
+	},
+	map: {
+		margin: 'auto'
+	},
+	subtitle : {
+		'padding-bottom' : '30px'
+	}
 });
 
 function AutoGrid(props) {
@@ -68,7 +82,18 @@ function AutoGrid(props) {
 						<Typography variant="display2" className={classes.fontTitle} gutterBottom>
 							Undersalon Location
 						</Typography>
-						<Map />
+						<Typography variant="subheading" className={classes.subtitle} gutterBottom>
+							💈분당구 정자동 137-10 지하 1층💈
+						</Typography>
+						<div className={classes.align}>
+							<div className={classes.map} >
+								<Map/>
+							</div>
+							<div className={classes.map} >
+								<StreetView />
+							</div>
+
+						</div>
 					</Paper>
 				</Grid>
 			</Grid>

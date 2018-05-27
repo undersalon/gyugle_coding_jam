@@ -57,10 +57,15 @@ const styles = theme => ({
 		display: 'flex',
 		'-webkit-flex-flow': 'row wrap'
 	},
-	avatar: {
+	rewardContainer : {
 		margin: 'auto',
-		width: 300,
-		height: 300
+	},
+	rewardText : {
+		padding : '10px'
+	},
+	avatar: {
+		width: 350,
+		height: 350
 	},
 });
 
@@ -76,26 +81,36 @@ function AutoGrid(props) {
 							REWARDS
 						</Typography>
 						<div className={classes.avatarDiv}>
-							<Avatar
-								alt="Adelle Charles"
-								src="./public/img/rewards.png"
-								className={classes.avatar}
-							/>
-							<Avatar
-								alt="Adelle Charles"
-								src="./public/img/rewards.png"
-								className={classes.avatar}
-							/>
-							<Avatar
-								alt="Adelle Charles"
-								src="./public/img/rewards.png"
-								className={classes.avatar}
-							/>
-							<Avatar
-								alt="Adelle Charles"
-								src="./public/img/rewards.png"
-								className={classes.avatar}
-							/>
+							<div className={classes.rewardContainer}>
+								<Avatar
+									alt="Enter"
+									src="./public/img/reward/enter.gif"
+									className={classes.avatar}
+								/>
+								<Typography variant="subheading"  className={classes.rewardText} gutterBottom>
+									<b>1등</b> 분노의 엔터
+								</Typography>
+							</div>
+							<div className={classes.rewardContainer}>
+								<Avatar
+									alt="bitcoin"
+									src="./public/img/reward/bitcoin.png"
+									className={classes.avatar}
+								/>
+								<Typography variant="subheading" className={classes.rewardText} gutterBottom>
+									<b>꼴등</b> 언더살롱 산 비트코인
+								</Typography>
+							</div>
+							<div className={classes.rewardContainer}>
+								<Avatar
+									alt="taekwondo"
+									src="./public/img/reward/taekwondo.png"
+									className={classes.avatar}
+								/>
+								<Typography variant="subheading"  className={classes.rewardText}  gutterBottom>
+									<b>기타</b> 철권 대결 상
+								</Typography>
+							</div>
 						</div>
 					</Paper>
 				</Grid>

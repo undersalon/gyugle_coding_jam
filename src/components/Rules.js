@@ -95,7 +95,6 @@ function AutoGrid(props) {
 								<li>실시간 전광판을 만들어서 2시 이후 TV에 집계할 예정</li>
 								<li>그날 완성을 못하면 손으로 돌려도 무방함</li>
 								<li>비 개발자 팀도 결성 가능하나 손으로 거래 하면 됨<br />(손으로 1등 한 것도 1등으로 인정)</li>
-								<li>참가비 만원 : 1등 상품 / 먹거리 / 맥주 정도 준비 할 비용</li>
 							</ul>
 						</div>
 						<span className={classes.line} />

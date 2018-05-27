@@ -4,9 +4,8 @@ import {withStyles} from '@material-ui/core/styles';
 const styles = theme => ({
 	root: {
 		position: "fixed",
-		"min-height": 750,
-		width: "100%",
-		height: "auto",
+		width: '100%',
+		height: '100%',
 		top: 0,
 		left: 0,
 		"background-image": `linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("./public/img/bitcoinTitle.gif")`,

@@ -38,7 +38,7 @@ const styles = theme => ({
 		"background-size": "100%"
 	},
 	font: {
-		'font-family': 'lmmonoproplt',
+		'font-family': 'Nanum Square',
 		'font-size': '20px'
 	},
 	line: {
@@ -55,6 +55,12 @@ const styles = theme => ({
 		height: 120,
 		left: '43%'
 	},
+	ol: {
+		'text-align': 'left',
+		margin: '0 auto',
+		display: 'table',
+		width : 380
+	}
 });
 
 function AutoGrid(props) {
@@ -70,14 +76,43 @@ function AutoGrid(props) {
 						</Typography>
 						<span className={classes.line} />
 						<span className={classes.font}>
-							I'm a paragraph.<br />
-							Click here to add your own text and edit me.<br />
-							It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. <br />
-							Feel free to drag and drop me anywhere you like on your page. <br />
-							I’m a great place for you to tell a story and let your users know a little more about you.<br /><br />
-							This is a great space to write long text about your company and your services. <br />
-							You can use this space to go into a little more detail about your company. <br />
-							Talk about your team and what services you provide.
+							<Typography variant="headline" className={classes.subTitle} gutterBottom>
+							아래 셋 중 하나라도 포함된다면<br />😎 당신은 <b>6월 1일</b> 규글 코딩잼에 참여한다. 😎
+							</Typography>
+							<br/>
+							<div>
+								<ol className={classes.ol}>
+									<li>금요일에 심심한 사람</li>
+									<li>암호 화폐에 관심 있는 사람</li>
+									<li>자동거래 프로그램을 만들어보고 싶은 사람</li>
+									<li>철권 할 사람(?)</li>
+									<li>자유롭게 코딩하고 싶은사람</li>
+								</ol>
+							</div>
+							<br/>
+							<br />
+							<Typography variant="headline" className={classes.subTitle} gutterBottom>
+							규글 코딩잼의 주제는 다음과 같다.
+							</Typography>
+							<br/>
+							<ol className={classes.ol}>
+								<li>암호 화폐 모의 투자 (최대 20명)</li>
+								<li>자유주제(5인 이하)</li>
+								<li>그냥 코인에 관심있는사람</li>
+							</ol>
+							<br/>
+							<br/>
+							<Typography variant="headline" className={classes.subTitle} gutterBottom>
+							참여 방법은 아래와 같다.
+							</Typography>
+							<br/>
+							<ol className={classes.ol}>
+								<li>페이스북에 댓글을 단다.<br/>(ex : 황지만/개발, 한규일/철권)</li>
+								<li>신청자 이름의 계좌로 1만원을 송금한다.<br/>(정보현, 케이뱅크 100-187-590049)</li>
+								<li> 6월 1일 언더싸롱으로 찾아온다.<br/>(분당구 정자동 137-10 지하 1층)</li>
+								<li><b>떡상 가즈아!</b> 를 외치면 문이 열린다.</li>
+								<li>뭐라도 만들어서 1등을 노려본다.<br/>몰빵/수동 거래도 가능하다.</li>
+							</ol>
 						</span>
 						<span className={classes.line} />
 					</Paper>

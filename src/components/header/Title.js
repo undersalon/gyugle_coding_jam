@@ -1,13 +1,15 @@
 import React from "react";
 import {withStyles} from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
+import {SocialIcon} from 'react-social-icons';
 
 const styles = theme => ({
 	imageButton: {
 		left: 0,
 		right: 0,
-		top: 0,
+		top: '10px',
 		bottom: 0,
+		position: 'relative',
 		display: 'flex',
 		alignItems: 'center',
 		justifyContent: 'center',
@@ -25,6 +27,9 @@ const styles = theme => ({
 	},
 	fontTitle: {
 		'font-family': 'Nanum Square'
+	},
+	icon: {
+		'margin-left' : "10px"
 	}
 });
 
@@ -36,18 +41,10 @@ function Title(props) {
 			<Typography className={`header-title ${classes.font}`} variant="display4" gutterBottom>
 				GYUGLE CODE JAM
 			</Typography>
-			<Typography variant="headline" className={classes.fontTitle} gutterBottom>
-				Bitcoin Investment Battle
-			</Typography>
 			<span className={`imageButton ${classes.imageButton}`}>
-				<Typography
-					component="span"
-					variant="subheading"
-					color="inherit"
-					className={`${classes.imageTitle} ${classes.fontTitle}`}
-				>
-					{"등록하기"}
-				</Typography>
+				<SocialIcon className={classes.icon} url="https://www.facebook.com/undersalon/" />
+				<SocialIcon className={classes.icon} url="https://www.instagram.com/undersalon/?hl=ko" />
+				<SocialIcon className={classes.icon} url="http://undersalon.com/" />
 			</span>
 		</div>
 	);

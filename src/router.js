@@ -39,8 +39,12 @@ class CustomizedTabs extends React.Component {
 		this.setState({value});
 		if ("Home" === value) {
 			location.href = "#/";
-		} else {
-			location.href = "#/about";
+		} else if ("Doc" === value){
+			location.href = "http://coin.undersalon.com/swagger-ui.html";
+		} else if ("Example" === value){
+			location.href = "http://coin.undersalon.com/example";
+		} else if ("Ranking" === value){
+			location.href = "http://coin.undersalon.com/billboard";
 		}
 	}
 
@@ -53,8 +57,9 @@ class CustomizedTabs extends React.Component {
 				<div className={classes.root}>
 					<div className={classes.tabsRoot}>
 						<Button className={classes.button} onClick={this.handleClick.bind(this, "Home")}>Home</Button>
-						<Button className={classes.button} onClick={this.handleClick.bind(this, "Api Doc")}>Api Doc</Button>
-						<Button className={classes.button} onClick={this.handleClick.bind(this, "Status")}>Status</Button>
+						<Button className={classes.button} onClick={this.handleClick.bind(this, "Doc")}>Api Doc</Button>
+						<Button className={classes.button} onClick={this.handleClick.bind(this, "Example")}>Example</Button>
+						<Button className={classes.button} onClick={this.handleClick.bind(this, "Ranking")}>Ranking</Button>
 					</div>
 					<Route exact path="/" component={HomeView} />
 					<Route path="/about" component={IndexView} />
