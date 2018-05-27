@@ -73,14 +73,13 @@ function AutoGrid(props) {
 
 	return (
 		<div className={classes.root}>
-			<Grid container spacing={0} className={classes.grid}>
-				<Grid item xs={5} className={classes.grid}>
+			<Grid container spacing={0} className="wrapper">
+				<Grid item xs={5} className="box2">
 					<Paper className={classes.paperLeft}>
 						<div className={classes.img} />
-
 					</Paper>
 				</Grid>
-				<Grid item xs className={classes.grid}>
+				<Grid item xs className="box1">
 					<Paper className={classes.paperRight}>
 						<Typography variant="display2" className={classes.fontTitle} gutterBottom>
 							RULES

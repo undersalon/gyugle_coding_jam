@@ -59,7 +59,7 @@ const styles = theme => ({
 	align: {
 		height: '100%',
 		padding: 0,
-		margin: 0,
+		'margin-bottom': '5em',
 		'list-style': 'none',
 		display: 'flex',
 		'-webkit-flex-flow': 'row wrap'
@@ -67,8 +67,9 @@ const styles = theme => ({
 	map: {
 		margin: 'auto'
 	},
-	subtitle : {
-		'padding-bottom' : '30px'
+	subtitle: {
+		'padding-bottom': '30px',
+		'font-size': '1.3em'
 	}
 });
 
@@ -86,11 +87,11 @@ function AutoGrid(props) {
 						<Typography variant="subheading" className={classes.subtitle} gutterBottom>
 							💈분당구 정자동 137-10 지하 1층💈
 						</Typography>
-						<div className={classes.align}>
-							<div className={classes.map} >
-								<Map/>
+						<div className={`wrapper wrapper-map ${classes.align}`}>
+							<div className={`map ${classes.map}`}>
+								<Map />
 							</div>
-							<div className={classes.map} >
+							<div className={`map ${classes.map}`}>
 								<StreetView />
 							</div>
 

@@ -116,3 +116,33 @@ p {
 	font-family: 'Nanum Square';
 	src: url('../font/NanumSquareOTFRegular.otf')
 }
+
+.map {
+	width: 45em;
+	height: 45em;
+}
+
+@media screen and (max-width: 600px) {
+	.wrapper {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.wrapper-map {
+
+	}
+
+	.box1 {
+		width: 100%;
+		float: right;
+	}
+
+	.box2 {
+		display: none;
+	}
+
+	.map {
+		width: 20em;
+		height: 20em;
+	}
+}

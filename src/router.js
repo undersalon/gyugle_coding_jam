@@ -18,10 +18,11 @@ const styles = theme => ({
 		'z-index': 100,
 		position: 'relative',
 		top: '130px',
-		left: '65%'
+		'text-align': 'center'
 	},
 	button: {
-		color: 'white'
+		color: 'white',
+		'font-size' : '1.2em'
 	}
 });
 

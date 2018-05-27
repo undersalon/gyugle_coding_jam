@@ -17,7 +17,7 @@ const StreetViewPanormaWithAnOverlayView = compose(
 	withProps({
 		googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBbdRNbGV0AhNmp0AGceSFW9sbtxoEb-FM&v=3.exp&libraries=geometry,drawing,places",
 		loadingElement: <div style={{height: `100%`}} />,
-		containerElement: <div style={{height: `28em`, width: `28em`}} />,
+		containerElement: <div style={{height: `inherit`, width: `inherit`}} />,
 		mapElement: <div style={{height: `100%`}} />,
 		center: {lat: 37.3604116, lng: 127.1139778}
 	}),
