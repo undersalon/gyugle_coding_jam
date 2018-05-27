@@ -43,9 +43,9 @@ class CustomizedTabs extends React.Component {
 		} else if ("Doc" === value){
 			location.href = "http://coin.undersalon.com/swagger-ui.html";
 		} else if ("Example" === value){
-			location.href = "http://coin.undersalon.com/example";
+			location.href = "http://coin.undersalon.com/";
 		} else if ("Ranking" === value){
-			location.href = "http://coin.undersalon.com/billboard";
+			location.href = "http://coin.undersalon.com/rank.html";
 		}
 	}
 
