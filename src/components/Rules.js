@@ -9,30 +9,26 @@ import TimeTable from './TimeTable'
 const styles = theme => ({
 	root: {
 		flexGrow: 1,
-		height: 800
-	},
-	grid: {
-		height: "100%",
+		height: "25%"
 	},
 	paperLeft: {
-		height: "100%",
 		textAlign: 'center',
-
 		background: "#201431",
 	},
 	fontTitle: {
-		color: 'whitesmoke',
+		color: "#eaeaea",
 		'font-family': 'bebasNeue',
 		'font-size': '85px',
-		position: 'relative',
-		top: '33%'
+		position: 'relative'
 	},
 	paperRight: {
 		height: "100%",
 		textAlign: 'center',
 		color: theme.palette.text.secondary,
-		background: "whitesmoke",
-		padding: '15%'
+		background: "#331c64",
+		overflow: 'hidden',
+		padding: '10%',
+		'box-sizing': 'border-box'
 	},
 	image: {
 		width: "120%",
@@ -51,6 +47,24 @@ const styles = theme => ({
 		'border-top': '1px solid #ccc',
 		'margin': '2em 0',
 		padding: 0
+	},
+	img: {
+		"min-height": 800,
+		"background-image": `linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("./public/img/programmer.gif")`,
+		"background-size": "100%",
+		position: 'relative'
+	},
+	ul: {
+		"text-align": "left",
+		'font-family': 'Nanum Square',
+		'color': '#c7c7c7',
+		"font-size": 19,
+		display: 'table',
+		margin: '0 auto',
+		padding: '3%'
+	},
+	subTitle: {
+		color: '#c7c7c7'
 	}
 });
 
@@ -62,22 +76,28 @@ function AutoGrid(props) {
 			<Grid container spacing={0} className={classes.grid}>
 				<Grid item xs={5} className={classes.grid}>
 					<Paper className={classes.paperLeft}>
-						<span className={classes.fontTitle}>about<br />session</span>
+						<div className={classes.img} />
+
 					</Paper>
 				</Grid>
 				<Grid item xs className={classes.grid}>
 					<Paper className={classes.paperRight}>
+						<Typography variant="display2" className={classes.fontTitle} gutterBottom>
+							RULES
+						</Typography>
 						<span className={classes.line} />
-						<span className={classes.font}>
-							I'm a paragraph.<br />
-							Click here to add your own text and edit me.<br />
-							It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. <br />
-							Feel free to drag and drop me anywhere you like on your page. <br />
-							I’m a great place for you to tell a story and let your users know a little more about you.<br /><br />
-							This is a great space to write long text about your company and your services. <br />
-							You can use this space to go into a little more detail about your company. <br />
-							Talk about your team and what services you provide.
-						</span>
+						<Typography variant="headline" className={classes.subTitle} gutterBottom>
+							비트코인 인생역전 나야나 나야나 🎉 🎉
+						</Typography>
+						<div>
+							<ul className={classes.ul}>
+								<li>이미 만들어진 오픈소스, 룰베이스, 머신러닝, 손 모든 방법 가능</li>
+								<li>실시간 전광판을 만들어서 2시 이후 TV에 집계할 예정</li>
+								<li>그날 완성을 못하면 손으로 돌려도 무방함</li>
+								<li>비 개발자 팀도 결성 가능하나 손으로 거래 하면 됨<br />(손으로 1등 한 것도 1등으로 인정)</li>
+								<li>참가비 만원 : 1등 상품 / 먹거리 / 맥주 정도 준비 할 비용</li>
+							</ul>
+						</div>
 						<span className={classes.line} />
 					</Paper>
 				</Grid>

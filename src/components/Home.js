@@ -1,25 +1,36 @@
 import React from "react";
 import Title from "./header/Title";
-import Section from "./Section";
-import Section2 from "./Section2";
-import Section3 from "./Section3";
-import Section4 from "./Section4";
+import Schedule from "./Schedule";
+import Session from "./Session";
 import Rewards from "./Rewards";
+import Rules from "./Rules";
+import MapContainer from "./MapContainer";
+import {withStyles} from '@material-ui/core/styles';
 import Background from "./Background";
 
-function Home() {
+const styles = theme => ({
+	root: {
+		top: "750px",
+		position: "relative",
+	}
+});
+
+function Home(props) {
+
+	const {classes} = props;
 	return (
 		<div id="page-header-root">
 			<Background />
-			<Title />
-			<Section2 />
-			<Section />
-			<Section3 />
-			<Rewards />
-			<Section4 />
-			<Section3 />
+			<Title/>
+			<div className={classes.root}>
+				<Session />
+				<Schedule />
+				<Rewards />
+				<Rules />
+				<MapContainer />
+			</div>
 		</div>
 	);
 }
 
-export default Home;
+export default withStyles(styles)(Home);

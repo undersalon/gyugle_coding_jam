@@ -4,12 +4,12 @@ import {withStyles} from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import TimeTable from './TimeTable'
+import Avatar from '@material-ui/core/Avatar';
 
 const styles = theme => ({
 	root: {
 		flexGrow: 1,
-		height: 800
+		height: "50%"
 	},
 	grid: {
 		height: "100%",
@@ -17,28 +17,27 @@ const styles = theme => ({
 	paperLeft: {
 		height: "100%",
 		textAlign: 'center',
-		color: theme.palette.text.secondary,
-		background: "whitesmoke",
-		padding: '15%'
+		background: "#201431",
+	},
+	fontTitle: {
+		color: '#201431',
+		'font-family': 'bebasNeue',
+		'font-size': '85px',
 	},
 	paperRight: {
 		height: "100%",
 		textAlign: 'center',
-		'background': "#D44428",
-	},
-	font: {
-		'font-family': 'bebasNeue',
-		color: 'whitesmoke',
-		'font-size': '85px',
-		position: 'relative',
-		top: '45%'
+		color: theme.palette.text.secondary,
+		background: "whitesmoke",
+		padding: '5%'
 	},
 	image: {
+		width: "120%",
 		height: "100%",
 		"background-image": `linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("/public/img/coding.png")`,
 		"background-size": "100%"
 	},
-	fontParagraph: {
+	font: {
 		'font-family': 'lmmonoproplt',
 		'font-size': '20px'
 	},
@@ -49,7 +48,13 @@ const styles = theme => ({
 		'border-top': '1px solid #ccc',
 		'margin': '2em 0',
 		padding: 0
-	}
+	},
+	avatar: {
+		margin: 10,
+		width: 120,
+		height: 120,
+		left: '43%'
+	},
 });
 
 function AutoGrid(props) {
@@ -58,10 +63,13 @@ function AutoGrid(props) {
 	return (
 		<div className={classes.root}>
 			<Grid container spacing={0} className={classes.grid}>
-				<Grid item xs={7} className={classes.grid}>
-					<Paper className={classes.paperLeft}>
+				<Grid item xs className={classes.grid}>
+					<Paper className={classes.paperRight}>
+						<Typography variant="display2" className={classes.fontTitle} gutterBottom>
+							About Session
+						</Typography>
 						<span className={classes.line} />
-						<span className={classes.fontParagraph}>
+						<span className={classes.font}>
 							I'm a paragraph.<br />
 							Click here to add your own text and edit me.<br />
 							It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. <br />
@@ -72,11 +80,6 @@ function AutoGrid(props) {
 							Talk about your team and what services you provide.
 						</span>
 						<span className={classes.line} />
-					</Paper>
-				</Grid>
-				<Grid item xs className={classes.grid}>
-					<Paper className={classes.paperRight}>
-						<span className={classes.font}>Schedule</span>
 					</Paper>
 				</Grid>
 			</Grid>

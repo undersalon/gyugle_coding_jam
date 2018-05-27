@@ -26,12 +26,12 @@
 }
 
 .txtNew {
+	top : 25%;
 	height: 0;
 	word-wrap: break-word;
 	text-align: start;
 	pointer-events: none;
 	position: relative;
-	top: -43%;
 }
 
 .txtNew_override-left * {

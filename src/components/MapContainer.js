@@ -4,12 +4,12 @@ import {withStyles} from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import TimeTable from './TimeTable'
+import Map from './Map';
 
 const styles = theme => ({
 	root: {
 		flexGrow: 1,
-		height: 300
+		height: "50%"
 	},
 	grid: {
 		height: "100%",
@@ -17,36 +17,44 @@ const styles = theme => ({
 	paperLeft: {
 		height: "100%",
 		textAlign: 'center',
-		color: theme.palette.text.secondary,
-		background: "#201431"
+		background: "#201431",
+	},
+	fontTitle: {
+		color: '#201431',
+		'font-family': 'bebasNeue',
+		'font-size': '85px',
 	},
 	paperRight: {
 		height: "100%",
-		textAlign: 'left',
-		'background': "#D44428",
-	},
-	typography: {
-		height: "100%",
-		margin: 0
-	},
-	font: {
-		color: '#D44428',
-		'font-size': '55px',
-		position: 'relative',
-		top: '38%'
-	},
-	rewards: {
-		height: '250px',
-		'max-height': 250,
-		overflow: 'hidden'
+		textAlign: 'center',
+		color: theme.palette.text.secondary,
+		background: "whitesmoke",
+		padding: '5%'
 	},
 	image: {
-		width: '25%',
-		height: '100%',
-		float: 'right',
-		"background-image": `linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/public/img/rewards.png")`,
+		width: "120%",
+		height: "100%",
+		"background-image": `linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("/public/img/coding.png")`,
 		"background-size": "100%"
-	}
+	},
+	font: {
+		'font-family': 'lmmonoproplt',
+		'font-size': '20px'
+	},
+	line: {
+		display: 'block',
+		height: '1.5px',
+		border: 0,
+		'border-top': '1px solid #ccc',
+		'margin': '2em 0',
+		padding: 0
+	},
+	avatar: {
+		margin: 10,
+		width: 120,
+		height: 120,
+		left: '43%'
+	},
 });
 
 function AutoGrid(props) {
@@ -56,12 +64,12 @@ function AutoGrid(props) {
 		<div className={classes.root}>
 			<Grid container spacing={0} className={classes.grid}>
 				<Grid item xs className={classes.grid}>
-					<Paper className={classes.paperLeft}>
-						<Typography variant="display2" className={classes.typography} gutterBottom>
-							<span className={classes.font}>REWARDS</span>
+					<Paper className={classes.paperRight}>
+						<Typography variant="display2" className={classes.fontTitle} gutterBottom>
+							Undersalon Location
 						</Typography>
+						<Map />
 					</Paper>
-
 				</Grid>
 			</Grid>
 		</div>

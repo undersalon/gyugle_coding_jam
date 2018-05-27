@@ -3,7 +3,12 @@ import {withStyles} from '@material-ui/core/styles';
 
 const styles = theme => ({
 	root: {
+		position: "fixed",
 		"min-height": 750,
+		width: "100%",
+		height: "auto",
+		top: 0,
+		left: 0,
 		"background-image": `linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("./public/img/bitcoinTitle.gif")`,
 		"background-size": "100%"
 	}
@@ -13,7 +18,7 @@ function Section(props) {
 	const {classes} = props;
 
 	return (
-		<div>
+		<div className={classes.fix}>
 			<div className={classes.root} />
 		</div>
 	);

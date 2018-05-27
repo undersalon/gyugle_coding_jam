@@ -15,6 +15,7 @@ const styles = theme => ({
 	},
 	tabsRoot: {
 		height: 0,
+		'z-index': 100,
 		position: 'relative',
 		top: '130px',
 		left: '65%'
