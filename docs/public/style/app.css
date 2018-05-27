@@ -1131,43 +1131,13 @@ p {
 }
 
 @font-face {
-	font-family: 'blox';
-	src: url('../font/Blox2.ttf');
-}
-
-@font-face {
-	font-family: 'dosis';
-	src: url('../font/Dosis-Medium.ttf');
-}
-
-@font-face {
 	font-family: 'lmmonoproplt';
 	src: url('../font/lmmonoproplt10-regular.otf');
 }
 
 @font-face {
-	font-family: 'lilly';
-	src: url('../font/Lilly__.ttf');
-}
-
-@font-face {
-	font-family: 'amatic';
-	src: url('../font/AmaticSC-Regular.ttf');
-}
-
-@font-face {
-	font-family: 'jennasue';
-	src: url('../font/JennaSue.ttf');
-}
-
-@font-face {
 	font-family: 'bebasNeue';
 	src: url('../font/BebasNeue.otf');
-}
-
-@font-face {
-	font-family: 'baby';
-	src: url('../font/DXLBaB-KSCpc-EUC-H.ttf')
 }
 
 @font-face {
