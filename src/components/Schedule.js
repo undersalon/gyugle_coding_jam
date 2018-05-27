@@ -17,7 +17,7 @@ const styles = theme => ({
 	fontTitle: {
 		color: 'whitesmoke',
 		'font-family': 'bebasNeue',
-		'font-size': '85px',
+		'font-size': '5em'
 	},
 	paperRight: {
 		height: "100%",
@@ -34,7 +34,7 @@ const styles = theme => ({
 	},
 	font: {
 		'font-family': 'lmmonoproplt',
-		'font-size': '20px',
+		'font-size': '1.2em',
 		color: 'whitesmoke'
 	},
 	line: {

@@ -23,7 +23,7 @@ const styles = theme => ({
 	fontTitle: {
 		color: '#201431',
 		'font-family': 'bebasNeue',
-		'font-size': '85px',
+		'font-size': '5em'
 	},
 	paperRight: {
 		height: "100%",
@@ -57,6 +57,7 @@ const styles = theme => ({
 		left: '43%'
 	},
 	align: {
+		height: '100%',
 		padding: 0,
 		margin: 0,
 		'list-style': 'none',

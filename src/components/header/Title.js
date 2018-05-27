@@ -24,6 +24,7 @@ const styles = theme => ({
 	},
 	font: {
 		'font-family': 'CulDeSac',
+		'font-size': '6em'
 	},
 	fontTitle: {
 		'font-family': 'Nanum Square'
