@@ -21,6 +21,7 @@ const StreetViewPanormaWithAnOverlayView = compose(
 		mapElement: <div style={{height: `100%`}} />,
 		center: {lat: 37.3604116, lng: 127.1139778}
 	}),
+	withScriptjs,
 	withGoogleMap
 )(props =>
 	<GoogleMap defaultZoom={8} defaultCenter={props.center}>
