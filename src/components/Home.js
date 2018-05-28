@@ -10,7 +10,7 @@ import Background from "./Background";
 
 const styles = theme => ({
 	root: {
-		top: "750px",
+		'padding-top': "750px",
 		position: "relative",
 	}
 });
