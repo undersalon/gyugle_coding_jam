@@ -77,7 +77,7 @@ function AutoGrid(props) {
 						<span className={classes.line} />
 						<span className={classes.font}>
 							<Typography variant="headline" className={classes.subTitle} gutterBottom>
-							아래 셋 중 하나라도 포함된다면<br />😎 당신은 <b>6월 1일</b> 규글 코딩잼에 참여한다. 😎
+							아래 셋 중 하나라도 포함된다면<br />😎 당신은 <b>6월 1일</b> 규글 코드잼에 참여한다. 😎
 							</Typography>
 							<br/>
 							<div>
@@ -92,7 +92,7 @@ function AutoGrid(props) {
 							<br/>
 							<br />
 							<Typography variant="headline" className={classes.subTitle} gutterBottom>
-							규글 코딩잼의 주제는 다음과 같다.
+							규글 코드잼의 주제는 다음과 같다.
 							</Typography>
 							<br/>
 							<ol className={classes.ol}>
