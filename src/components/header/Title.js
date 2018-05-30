@@ -80,7 +80,7 @@ class Title extends React.Component {
 					     onMouseOut={() => this.setState({isMouseOver: false})}
 					     onClick={this.handleClick}
 					     width="100%" height="100%"
-					     src="/public/img/arrow_down.png" />
+					     src="./public/img/arrow_down.png" />
 				</div>
 			</div>
 		);
