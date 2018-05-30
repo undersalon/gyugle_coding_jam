@@ -30,25 +30,62 @@ const styles = theme => ({
 		'font-family': 'Nanum Square'
 	},
 	icon: {
-		'margin-left' : "10px"
+		'margin-left': "10px"
+	},
+	arrow: {
+		width: '5em',
+		height: '5em',
+		margin: '0 auto',
+		display: 'table',
+		position: 'relative',
+		top: '7em',
+		'z-index': 100
 	}
 });
 
+class Title extends React.Component {
 
-function Title(props) {
-	const {classes} = props;
-	return (
-		<div className="txtNew">
-			<Typography className={`header-title ${classes.font}`} variant="display4" gutterBottom>
-				GYUGLE CODE JAM
-			</Typography>
-			<span className={`imageButton ${classes.imageButton}`}>
-				<SocialIcon className={classes.icon} url="https://www.facebook.com/undersalon/" />
-				<SocialIcon className={classes.icon} url="https://www.instagram.com/undersalon/?hl=ko" />
-				<SocialIcon className={classes.icon} url="http://undersalon.com/" />
+	constructor(props) {
+		super(props);
+		const {classes} = props;
+
+		this.classes = classes;
+		this.state = {
+			isMouseOver: false
+		};
+
+		this.handleClick = () => {
+			window.scrollTo({
+				top: 750,
+				behavior: "smooth"
+			});
+		}
+	}
+
+	render() {
+		return (
+			<div className="txtNew">
+				<Typography className={`header-title ${this.classes.font}`} variant="display4" gutterBottom>
+					GYUGLE CODE JAM
+				</Typography>
+				<span className={`imageButton ${this.classes.imageButton}`}>
+				<SocialIcon className={this.classes.icon} url="https://www.facebook.com/undersalon/" />
+				<SocialIcon className={this.classes.icon} url="https://www.instagram.com/undersalon/?hl=ko" />
+				<SocialIcon className={this.classes.icon} url="http://undersalon.com/" />
 			</span>
-		</div>
-	);
+				<div className={this.classes.arrow}>
+					<img id="animated-example"
+					     className={this.state.isMouseOver ? "bounce animated" : ""}
+					     onMouseOver={() => this.setState({isMouseOver: true})}
+					     onMouseOut={() => this.setState({isMouseOver: false})}
+					     onClick={this.handleClick}
+					     width="100%" height="100%"
+					     src="/public/img/arrow_down.png" />
+				</div>
+			</div>
+		);
+	}
 }
+
 
 export default withStyles(styles)(Title);

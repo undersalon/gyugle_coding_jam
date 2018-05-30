@@ -10,7 +10,6 @@ body, html {
 	font-size: 16px;
 	line-height: 1.5;
 	background-color: #f9fafa;
-	overflow-x: hidden;
 }
 
 @media (max-width: 1100px) {
@@ -145,4 +144,39 @@ p {
 		width: 20em;
 		height: 20em;
 	}
+}
+
+.animated {
+	-webkit-animation-duration: .5s;
+	animation-duration: .5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce {
+	0%, 100% {
+		-webkit-transform: translateY(0);
+	}
+	50% {
+		-webkit-transform: translateY(-5px);
+	}
+}
+@keyframes bounce {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-5px);
+	}
+}
+.bounce {
+	-webkit-animation-name: bounce;
+	animation-name: bounce;
+}
+#animated-example {
+	position: relative;
+	border-radius: 50%;
 }
